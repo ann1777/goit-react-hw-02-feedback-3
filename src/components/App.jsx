@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Section } from './Section/Section';
+import { PageContainer } from './PageContainer/PageContainer';
 
 export class App extends Component {
   state = {
@@ -17,21 +18,13 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
 
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-    <>
+    <PageContainer>
         <Section title="Please leave feedback">
+          <h1>"Hello"</h1>
         options={Object.keys(good, neutral, bad)}
           </Section>
-          </>    
-    </div>
+
+    </PageContainer>    
   );}
 }
+ 
