@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react'
 import { Section } from './Section/Section';
 import { PageContainer } from './PageContainer/PageContainer';
+import { GlobalStyle } from './GlobalStyle';
 
-export class App extends Component {
+export class App extends React.Component {
   state = {
     good: 0,
     neutral: 0,
@@ -23,7 +24,7 @@ export class App extends Component {
           <h1>"Hello"</h1>
         options={Object.keys(good, neutral, bad)}
           </Section>
-
+        <GlobalStyle />
     </PageContainer>    
   );}
 }

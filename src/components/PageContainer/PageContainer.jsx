@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container } from './PageContainer.styled';
+import { Pageontainer } from './PageContainer.styled';
 import PropTypes from 'prop-types';
 
 export const PageContainer = ({ children }) => {
   return (
-    <Container>
+    <Pageontainer>
       <main>{children}</main>
-    </Container>
+    </Pageontainer>
   );
 };
 
