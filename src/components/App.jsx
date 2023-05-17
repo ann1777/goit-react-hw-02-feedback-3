@@ -1,4 +1,15 @@
-export const App = () => {
+import React, { Component } from 'react';
+import { Section } from './Section/Section';
+
+export class App extends Component {
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
+  render() {
+    const { good, neutral, bad } = this.state;
+
   return (
     <div
       style={{
@@ -10,7 +21,10 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template!
+    <>
+        <Section title="Please leave feedback">
+          </Section>
+          </>    
     </div>
-  );
-};
+  );}
+}
